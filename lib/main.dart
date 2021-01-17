@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tab_bar_controller/tab_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -16,12 +17,9 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Tab Bar Demo'),
-      ),
-      body: Center(
-        child: Text('Hello World !'),
-      ),
-    );
+        appBar: AppBar(
+          title: Text('Tab Bar Demo'),
+        ),
+        body: TabScreen());
   }
 }
